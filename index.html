@@ -15,64 +15,55 @@
       alt="pixel_perfect"
     /> -->
     <header class="header">
-      <menu class="header__links-list">
+      <nav class="header__links-list">
         <li class="header__links-list-item header__links-list-item_no-bullit">
-          <a
-            class="header__link_active header__link"
-            href="#0"
-            class="link__page__index"
-            >главная</a
-          >
+          <a class="header__link_active header__link" href="#0">главная</a>
         </li>
         <li class="header__links-list-item">
-          <a class="header__link" href="#0" class="link__page__Lots"
-            >посмотреть лоты</a
-          >
+          <a class="header__link" href="#0">посмотреть лоты</a>
         </li>
         <li class="header__links-list-item">
-          <a class="header__link" href="#0" class="link__page__about"
-            >об аукционе</a
-          >
+          <a class="header__link" href="#0">об аукционе</a>
         </li>
-      </menu>
-      <a class="header__logo">
+      </nav>
+      <div class="header__logo">
         <img
           class="header__logo-image"
           src="images/logo-black.svg"
           alt="Логотип"
         />
-      </a>
-      <adress class="contact header__contact">
+      </div>
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <a>наб. Принсенграхт 263-265, Амстердам</a>
-      </adress>
+      </address>
     </header>
     <main class="main">
+      
       <section class="cover">
         <div class="overlay"></div>
-        <div>
-          <h1 class="cover__title">
-            <span class="aligned-text">оно</span>
-            <span class="aligned-text aligned-text_center">тебе</span>
-            <span class="aligned-text aligned-text_right">надо</span>
-          </h1>
-        </div>
-        <div class="title__description">
-          <p>Аукцион вещей, в которые никто не верил</p>
-          <button type="button" name="Сделать ставку">Сделать ставку</button>
+        <h1 class="cover__title">
+          <span class="accent-span">оно</span>
+          <span class="accent-span text-center">тебе</span>
+          <span class="accent-span text-right">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class = "cover__button" type="button" name="Сделать ставку">Сделать ставку</button>
         </div>
       </section>
+
       <section class="lots">
-        <h2>лоты</h2>
-        <ul class="lots__frame">
-          <li>
-            <a>
-              <article>
-                <h3 class="lots__text__heading">
+        <h2 class="lots__heading">лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="text__description">
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -81,14 +72,14 @@
             </a>
           </li>
         </ul>
-        <ul class="lots__frame">
-          <li>
-            <a>
-              <article>
-                <h3 class="lots__text__heading">
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="text__description">
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -100,14 +91,14 @@
             </a>
           </li>
         </ul>
-        <ul class="lots__frame">
-          <li>
-            <a>
-              <article>
-                <h3 class="lots__text__heading">
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="text__description">
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -117,7 +108,7 @@
             </a>
           </li>
         </ul>
-        <a class="lots__next">посмотреть больше</a>
+        <a class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="logo__black__circle">
@@ -145,20 +136,22 @@
       </section>
     </main>
     <footer class="footer__menu nav">
-      <adress class="contact">
+      <address class="address">
         <a>+9 999 555 5555</a>
         <a>info@sobaka.ge</a>
         <a> наб. Принсенграхт 263-265, Амстердам</a>
-      </adress>
+      </address>
       <menu>
         <li><a href="#0" class="link__page__index">главная</a></li>
         <li><a href="#0" class="link__page__Lots">посмотреть лоты</a></li>
         <li><a href="#0" class="link__page__about">об аукционе</a></li>
       </menu>
       <div class="social">
-        <a class="social__youtube"><img src="images/yt.svg" /></a>
-        <a class="social__VK"><img src="images/vk.svg" /></a>
-        <a class="social__pinterest"><img src="images/pinterest.svg" /></a>
+        <a class="social__youtube"><img src="images/yt.svg" alt="youtube" /></a>
+        <a class="social__VK"><img src="images/vk.svg" alt="vk" /></a>
+        <a class="social__pinterest"
+          ><img src="images/pinterest.svg" alt="pinterest"
+        /></a>
       </div>
     </footer>
   </body>

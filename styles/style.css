@@ -26,7 +26,7 @@ header {
   height: 105px;
   margin: auto;
 }
-.header__contact {
+.header__address {
   display: flex;
   flex-direction: column;
   justify-self: end;
@@ -38,6 +38,55 @@ header {
 .main {
 }
 .cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  background: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0 50px 50px;
+}
+.cover__title {
+  margin-top: 104px;
+  position: relative;
+  z-index: 2;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  padding-right: 50px;
+  margin-top: 96px;
+}
+.overlay {
+  position: absolute;
+  z-index: 1;
+  inset: 0; /*позиционируем в левый верхний угол*/
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cover__description-text {
+  text-transform: uppercase;
+  word-spacing: 0.85em;
+}
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*
+.cover {
+  display: flex;
   position: relative;
   min-height: 100%;
   background-image: url(../images/cover.jpg);
@@ -73,6 +122,7 @@ header {
   height: 100%;
   background-color: rgba(151, 28, 28, 0.4);
 }
+  */
 /* 
 footer {
 }
