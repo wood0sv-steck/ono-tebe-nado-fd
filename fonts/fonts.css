@@ -1,17 +1,25 @@
 @font-face {
   font-family: Raleway;
-  src:
-    url(./Raleway-Regular.woff2) format('woff2'),
-    url(./Raleway-Regular.woff) format('woff');
+  src: url(./Raleway-Regular.woff2) format("woff2"),
+    url(./Raleway-Regular.woff) format("woff");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: Raleway;
-  src:
-    url(./Raleway-Bold.woff2) format('woff2'),
-    url(./Raleway-Bold.woff) format('woff');
+  src: url(./Raleway-Bold.woff2) format("woff2"),
+    url(./Raleway-Bold.woff) format("woff");
   font-weight: bold;
   font-display: swap;
+}
+.cover__title {
+ color: azure;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: Bold;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
