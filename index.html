@@ -16,15 +16,17 @@
     /> -->
     <header class="header">
       <nav class="header__links-list">
-        <li class="header__links-list-item header__links-list-item_no-bullit">
-          <a class="header__link_active header__link" href="#0">главная</a>
-        </li>
-        <li class="header__links-list-item">
-          <a class="header__link" href="#0">посмотреть лоты</a>
-        </li>
-        <li class="header__links-list-item">
-          <a class="header__link" href="#0">об аукционе</a>
-        </li>
+        <ul>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link_active header__link" href="#0">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">об аукционе</a>
+          </li>
+        </ul>
       </nav>
       <div class="header__logo">
         <img
@@ -40,26 +42,28 @@
       </address>
     </header>
     <main class="main">
-      
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="accent-span">оно</span>
-          <span class="accent-span text-center">тебе</span>
-          <span class="accent-span text-right">надо</span>
+          <span class="aligned-text">оно</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right">надо</span>
         </h1>
         <div class="cover__description">
-          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
-          <button class = "cover__button" type="button" name="Сделать ставку">Сделать ставку</button>
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button" type="button" name="Сделать ставку">
+            Сделать ставку
+          </button>
         </div>
       </section>
-
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_film">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -75,7 +79,7 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -94,7 +98,7 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_picture">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
