@@ -3,31 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Оно мне надо</title>
   </head>
   <body>
-    <!-- <img
-      class="pixel-perfect-image"
-      src="images/pixel_perfect.svg"
-      alt="pixel_perfect"
-    /> -->
     <header class="header">
-      <nav class="header__links-list">
-        <ul>
-          <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link_active header__link" href="#0">главная</a>
-          </li>
-          <li class="header__links-list-item">
-            <a class="header__link" href="#0">посмотреть лоты</a>
-          </li>
-          <li class="header__links-list-item">
-            <a class="header__link" href="#0">об аукционе</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="header__links-list">
+        <li
+          class="header__links-list-item header__link_active header__links-list-item_no-bullit"
+        >
+          <a class="header__link_active header__link" href="">главная</a>
+        </li>
+        <li class="header__links-list-item">
+          <a class="header__link" href="">посмотреть лоты</a>
+        </li>
+        <li class="header__links-list-item header__links-list-about">
+          <a class="header__link" href="">об аукционе</a>
+        </li>
+      </ul>
       <div class="header__logo">
         <img
           class="header__logo-image"
@@ -36,9 +31,13 @@
         />
       </div>
       <address class="address header__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a>наб. Принсенграхт 263-265, Амстердам</a>
+        <a class="header__address-offset" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="header__address-offset" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <a>наб. Принсенграхт 263- 265, Амстердам</a>
       </address>
     </header>
     <main class="main">
@@ -59,11 +58,12 @@
         </div>
       </section>
       <section class="lots">
-        <h2 class="lots__heading">лоты</h2>
+        <h2 class="heading lots__heading">лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
               <article class="card card_type_film">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -75,11 +75,10 @@
               </article>
             </a>
           </li>
-        </ul>
-        <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
               <article class="card card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -94,11 +93,11 @@
               </article>
             </a>
           </li>
-        </ul>
-        <ul class="lots__card-list">
+
           <li class="lots__card-list-item">
             <a class="card-link">
               <article class="card card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -112,51 +111,82 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link">посмотреть больше</a>
+        <a href="" class="lots__look-more-link">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="logo__black__circle">
-          <img class="logo__black" src="images/logo-white.svg" alt="Логотип" />
+        <div class="about__logo about__column">
+          <img
+            class="about__logo-image"
+            src="images/logo-white.svg"
+            alt="Логотип"
+          />
         </div>
-        <div>
-          <h2>Об аукционе</h2>
-          <div>
-            <p class="text__description">
+        <div class="about__column">
+          <h2 class="heading about__title">Об аукционе</h2>
+          <div class="about__text">
+            <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p class="text__description">
-              Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё
+              время. В пух и прах растерзанные критиками. Непринятые и
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              на критику, кажущуюся простоту или сложность, сейчас без этих
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми
             </p>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer__menu nav">
+    <footer class="footer">
       <address class="address">
-        <a>+9 999 555 5555</a>
-        <a>info@sobaka.ge</a>
-        <a> наб. Принсенграхт 263-265, Амстердам</a>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a>наб. Принсенграхт 263-265, Амстердам</a>
       </address>
-      <menu>
-        <li><a href="#0" class="link__page__index">главная</a></li>
-        <li><a href="#0" class="link__page__Lots">посмотреть лоты</a></li>
-        <li><a href="#0" class="link__page__about">об аукционе</a></li>
-      </menu>
-      <div class="social">
-        <a class="social__youtube"><img src="images/yt.svg" alt="youtube" /></a>
-        <a class="social__VK"><img src="images/vk.svg" alt="vk" /></a>
-        <a class="social__pinterest"
-          ><img src="images/pinterest.svg" alt="pinterest"
-        /></a>
-      </div>
+      <ul class="footer__menu footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a
+            class="footer__menu-link link__page__index footer__menu-link_active"
+            href=""
+            >главная</a
+          >
+        </li>
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link link__page__Lots" href=""
+            >посмотреть лоты</a
+          >
+        </li>
+        <li class="footer__menu-list-item">
+          <a class="footer__menu-link link__page__about" href="">об аукционе</a>
+        </li>
+      </ul>
+      <ul class="footer__social-list">
+        <li>
+          <a href="" class="footer__social-link"
+            ><img class="footer__social-icon" src="images/yt.svg" alt="youtube"
+          /></a>
+        </li>
+        <li>
+          <a href="" class="footer__social-link"
+            ><img class="footer__social-icon" src="images/vk.svg" alt="vk"
+          /></a>
+        </li>
+        <li>
+          <a href="" class="sfooter__social-link"
+            ><img
+              class="footer__social-icon"
+              src="images/pinterest.svg"
+              alt="pinterest"
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

@@ -1,20 +1,47 @@
 @font-face {
   font-family: Raleway;
-  src: url(./Raleway-Regular.woff2) format("woff2"),
-    url(./Raleway-Regular.woff) format("woff");
+  src: url(../fonts/Raleway-Regular.woff2) format("woff2"),
+    url(../fonts/Raleway-Regular.woff) format("woff");
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: Raleway;
-  src: url(./Raleway-Bold.woff2) format("woff2"),
-    url(./Raleway-Bold.woff) format("woff");
+  src: url(../fonts/Raleway-Bold.woff2) format("woff2"),
+    url(../fonts/Raleway-Bold.woff) format("woff");
   font-weight: bold;
   font-display: swap;
 }
+
+h3 {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+   color: aliceblue;
+}
+h2 {
+  font-family: Raleway;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.header {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 24.3px;
+  /* letter-spacing:0.1px; */
+}
 .cover__title {
- color: azure;
+  color: azure;
   font-family: Raleway;
   font-weight: 700;
   font-size: 100px;
@@ -22,4 +49,48 @@
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+.cover__description-text {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  line-height: 28px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.bet-button {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.card__text {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: aliceblue;
+}
+.lots__look-more-link {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.about__text {
+font-family: Raleway;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 24px;
 }
