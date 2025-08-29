@@ -2,8 +2,7 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 292px;
-  padding: 0 50px 4px 48px;
+  padding: 81px 48px 85px 48px;
 }
 .header__links-list {
   display: flex;
@@ -13,10 +12,14 @@ header {
 }
 .header__links-list-about {
   list-style: circle;
+  margin-left: 4.5px;
+  padding-left: 3.5px;
+  text-underline-offset: 4px;
 }
 .header__links-list-item {
-  padding-left: 2.8px;
+  padding-left: 3.3px;
   list-style: circle;
+  text-underline-offset: 4px;
 }
 .header__link_active {
   text-decoration: none;
@@ -25,9 +28,9 @@ header {
   list-style: none;
 }
 .header__logo {
-  width: 136px;
-  height: 110px;
-  margin: 9px;
+  width: 134px;
+  height: 115px;
+  margin: 11px 0 0 -2px;
 }
 .header__logo-image {
   position: relative;
@@ -35,21 +38,22 @@ header {
   left: 2px;
 }
 .address {
+  padding-top: 1px;
   display: flex;
   flex-direction: column;
-  font-weight: inherit;
-  font-style: inherit;
+  font-weight: 400;
+  font-style: normal;
 }
 .header__address-offset {
+  padding: -3px;
   text-underline-offset: 4px;
 }
 .header__address {
   display: flex;
-  justify-self: end;
+  justify-self: flex-end;
   align-items: flex-start;
-  max-width: 240px;
+  max-width: 241px;
 }
-
 .cover {
   position: relative;
   display: flex;
@@ -79,7 +83,6 @@ header {
 .aligned-text_right {
   text-align: end;
 }
-
 .cover__description {
   position: relative;
   z-index: 2;
@@ -102,12 +105,11 @@ header {
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #ffffff;
+  border:1px solid ;
   padding: 12px 32px 11px 31px;
   color: #fff;
   background-color: transparent;
 }
-
 .lots {
   margin: 182px 0 125px 0;
 }
@@ -209,8 +211,7 @@ header {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 180px;
-  margin: 181px 50px 0 50.57px;
+  margin: 180px 50px 82px 50px;
 }
 .footer__social-list {
   display: flex;
@@ -219,8 +220,10 @@ footer {
   gap: 48px;
   list-style: none;
 }
+.footer__menu-link_active {
+  text-decoration: none;
+}
 .footer__menu-list {
-  text-align: center;
   list-style: none;
 }
 .footer__social-icon {
