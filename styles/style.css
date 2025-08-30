@@ -44,7 +44,6 @@ header {
 }
 .header__address {
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-self: flex-end;
   align-items: flex-start;
