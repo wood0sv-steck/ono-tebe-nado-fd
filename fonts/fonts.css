@@ -20,8 +20,8 @@ h3 {
   font-size: 22px;
   line-height: 120%;
   text-decoration: underline;
-  text-transform: uppercase;
   text-underline-offset: 2px;
+  text-transform: uppercase;
 }
 h2 {
   font-family: Raleway;
@@ -38,8 +38,8 @@ h2 {
 .header__links-list-about {
   font-family: Raleway;
   font-weight: 400;
-  font-style: Regular;
   font-size: 18px;
+  font-style: Regular;
 }
 .cover__title {
   color: azure;
@@ -90,7 +90,7 @@ h2 {
   font-style: Regular;
   line-height: 24px;
 }
-.footer__address {
+.address {
   font-family: Raleway;
   font-size: 18px;
   line-height: 24.3px;
